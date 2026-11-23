@@ -2,8 +2,6 @@
 
 **Built for retrenchment exercises in Singapore. Usable elsewhere as general guidance.**
 
-![The Responsible Retrenchment handbook](assets/book-cover.jpg)
-
 A diagnostic for HR leaders, business owners and management teams who are planning a retrenchment exercise affecting employees in Singapore. Claude asks a few short multiple-choice questions about your biggest concern, then gives you one advisory card that names the most likely risk, explains why it matters, and sets out the one thing to do next.
 
 Built by Career Agility International from its *Responsible Retrenchment* handbook and long experience supporting employers and employees through restructuring in Singapore.
