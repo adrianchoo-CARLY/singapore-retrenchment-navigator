@@ -1,0 +1,1550 @@
+{
+ "metadata": {
+  "name": "Singapore Responsible Retrenchment Navigator",
+  "version": "1.0.0",
+  "jurisdiction": "Singapore",
+  "owner": "Career Agility International",
+  "disclaimer": "This tool provides general guidance only and does not constitute legal advice. Employers should verify current requirements with MOM, TAFEP, WSG, IRAS and qualified advisors before making decisions. Career Agility International accepts no liability for any decision made or action taken in reliance on this tool or its output.",
+  "closingLine": "Get legal advice or contact info@careeragility.org for more information.",
+  "referencesLastChecked": "November 2026",
+  "scope": "Built for Singapore law and practice: the Employment Act, MOM requirements including mandatory retrenchment notification, the Tripartite Advisory on Managing Excess Manpower and Responsible Retrenchment, TAFEP guidance, WSG support and IRAS tax treatment. Usable elsewhere as general guidance, with the outside-Singapore disclaimer.",
+  "outsideSingaporeDisclaimer": "The advice this tool provides is for the Singapore context only, so use the information judiciously and check with your local authorities and a qualified employment lawyer on the requirements that apply where you are.",
+  "singaporeSpecific": {
+   "nodes": [
+    "3.1",
+    "3.2.1",
+    "3.3",
+    "3.3.1",
+    "4.3",
+    "4.3.1",
+    "4.6",
+    "4.6.1"
+   ],
+   "cards": [
+    "6A",
+    "6B",
+    "6C",
+    "6D",
+    "9A",
+    "9B",
+    "12A",
+    "12B",
+    "12C"
+   ],
+   "note": "These refer to Singapore-specific rules (MOM notification and the 10-employee threshold, the Tripartite Advisory two-year service norm for retrenchment benefits, and Singapore work passes)."
+  }
+ },
+ "categories": {
+  "1": {
+   "label": "I'm not sure if we're ready to retrench",
+   "theme": "Strategic readiness and exit route"
+  },
+  "2": {
+   "label": "I'm worried about choosing the wrong people",
+   "theme": "Selection and legal risk"
+  },
+  "3": {
+   "label": "I'm not sure who we need to inform",
+   "theme": "Compliance and stakeholder notification"
+  },
+  "4": {
+   "label": "I'm not sure what package or support to offer",
+   "theme": "Package, entitlements and employee support"
+  },
+  "5": {
+   "label": "I'm worried we'll mishandle the actual exit",
+   "theme": "Notification, optics and recovery"
+  }
+ },
+ "startNode": "R",
+ "nodes": {
+  "R": {
+   "id": "R",
+   "category": null,
+   "text": "What is your biggest concern as you plan this retrenchment exercise?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "I'm not sure if we're ready to retrench",
+     "targetType": "node",
+     "target": "1"
+    },
+    {
+     "label": "I'm worried about choosing the wrong people",
+     "targetType": "node",
+     "target": "2"
+    },
+    {
+     "label": "I'm not sure who we need to inform",
+     "targetType": "node",
+     "target": "3"
+    },
+    {
+     "label": "I'm not sure what package or support to offer",
+     "targetType": "node",
+     "target": "4"
+    },
+    {
+     "label": "I'm worried we'll mishandle the actual exit",
+     "targetType": "node",
+     "target": "5"
+    }
+   ]
+  },
+  "1": {
+   "id": "1",
+   "category": "1",
+   "text": "I'm not sure if we're ready to retrench",
+   "autoAdvance": true,
+   "options": [
+    {
+     "label": "Select",
+     "targetType": "node",
+     "target": "1.1"
+    }
+   ]
+  },
+  "1.1": {
+   "id": "1.1",
+   "category": "1",
+   "text": "Has the business already decided that roles or headcount must be removed?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "1.1.1"
+    },
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "1.2"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "1A"
+    }
+   ]
+  },
+  "1.1.1": {
+   "id": "1.1.1",
+   "category": "1",
+   "text": "Have alternatives been properly considered before retrenchment?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "1.2"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "1A"
+    }
+   ]
+  },
+  "1.2": {
+   "id": "1.2",
+   "category": "1",
+   "text": "What is the real reason people may be leaving?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Roles redundant",
+     "targetType": "node",
+     "target": "1.3"
+    },
+    {
+     "label": "Performance / poor fit / plateau / not sure",
+     "targetType": "card",
+     "target": "2A"
+    },
+    {
+     "label": "Mixed situations",
+     "targetType": "node",
+     "target": "1.2.1"
+    }
+   ]
+  },
+  "1.2.1": {
+   "id": "1.2.1",
+   "category": "1",
+   "text": "Are different types of exits being grouped under the same process?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes / Not sure",
+     "targetType": "card",
+     "target": "2B"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "1.3"
+    }
+   ]
+  },
+  "1.3": {
+   "id": "1.3",
+   "category": "1",
+   "text": "When is the intended Notification Day?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Less than 2 weeks",
+     "targetType": "card",
+     "target": "3A"
+    },
+    {
+     "label": "2 to 6 weeks",
+     "targetType": "node",
+     "target": "1.3.1"
+    },
+    {
+     "label": "More than 6 weeks / no date",
+     "targetType": "node",
+     "target": "1.4"
+    }
+   ]
+  },
+  "1.3.1": {
+   "id": "1.3.1",
+   "category": "1",
+   "text": "Are the key workstreams ready: criteria, package, communications, manager training and employee support?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "3B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "3A"
+    }
+   ]
+  },
+  "1.4": {
+   "id": "1.4",
+   "category": "1",
+   "text": "Is technology, AI, automation or relocation driving the restructuring?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "1.4.1"
+    },
+    {
+     "label": "No",
+     "targetType": "card",
+     "target": "3B"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "1A"
+    }
+   ]
+  },
+  "1.4.1": {
+   "id": "1.4.1",
+   "category": "1",
+   "text": "Could some roles be redesigned, reskilled or redeployed instead?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes / Not sure",
+     "targetType": "card",
+     "target": "1B"
+    },
+    {
+     "label": "No",
+     "targetType": "card",
+     "target": "1C"
+    }
+   ]
+  },
+  "2": {
+   "id": "2",
+   "category": "2",
+   "text": "I'm worried about choosing the wrong people",
+   "autoAdvance": true,
+   "options": [
+    {
+     "label": "Select",
+     "targetType": "node",
+     "target": "2.1"
+    }
+   ]
+  },
+  "2.1": {
+   "id": "2.1",
+   "category": "2",
+   "text": "Do you already have a proposed list of affected employees?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "2.2"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "node",
+     "target": "2.1.1"
+    }
+   ]
+  },
+  "2.1.1": {
+   "id": "2.1.1",
+   "category": "2",
+   "text": "Are you selecting roles first, or people first?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Roles first",
+     "targetType": "node",
+     "target": "2.2"
+    },
+    {
+     "label": "People first / not sure",
+     "targetType": "card",
+     "target": "4A"
+    }
+   ]
+  },
+  "2.2": {
+   "id": "2.2",
+   "category": "2",
+   "text": "Are the selection criteria objective, documented and linked to future business needs?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "2.3"
+    },
+    {
+     "label": "Partially",
+     "targetType": "node",
+     "target": "2.2.1"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "4A"
+    }
+   ]
+  },
+  "2.2.1": {
+   "id": "2.2.1",
+   "category": "2",
+   "text": "Are managers relying heavily on subjective judgment?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes / Not sure",
+     "targetType": "card",
+     "target": "4A"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "2.3"
+    }
+   ]
+  },
+  "2.3": {
+   "id": "2.3",
+   "category": "2",
+   "text": "Does the affected list disproportionately include any protected or sensitive employee groups?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes / Not sure",
+     "targetType": "card",
+     "target": "5A"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "2.4"
+    }
+   ]
+  },
+  "2.4": {
+   "id": "2.4",
+   "category": "2",
+   "text": "Are expensive, older or long-serving employees overrepresented?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "2.4.1"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "2.5"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "5A"
+    }
+   ]
+  },
+  "2.4.1": {
+   "id": "2.4.1",
+   "category": "2",
+   "text": "Could cost be acting as a proxy for age, seniority or tenure?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes / Not sure",
+     "targetType": "card",
+     "target": "5B"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "2.5"
+    }
+   ]
+  },
+  "2.5": {
+   "id": "2.5",
+   "category": "2",
+   "text": "Is performance history being used as part of the selection?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "2.5.1"
+    },
+    {
+     "label": "No",
+     "targetType": "card",
+     "target": "4B"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "4A"
+    }
+   ]
+  },
+  "2.5.1": {
+   "id": "2.5.1",
+   "category": "2",
+   "text": "Are the performance records current, consistent and relevant to the future organisation?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "4B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "4C"
+    }
+   ]
+  },
+  "3": {
+   "id": "3",
+   "category": "3",
+   "text": "I'm not sure who we need to inform",
+   "autoAdvance": true,
+   "options": [
+    {
+     "label": "Select",
+     "targetType": "node",
+     "target": "3.1"
+    }
+   ]
+  },
+  "3.1": {
+   "id": "3.1",
+   "category": "3",
+   "text": "Does the company have 10 or more employees in Singapore?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "3.2"
+    },
+    {
+     "label": "No",
+     "targetType": "card",
+     "target": "6B"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "6C"
+    }
+   ]
+  },
+  "3.2": {
+   "id": "3.2",
+   "category": "3",
+   "text": "Will any employee be retrenched due to redundancy or reorganisation?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "3.2.1"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "3.5"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "2A"
+    }
+   ]
+  },
+  "3.2.1": {
+   "id": "3.2.1",
+   "category": "3",
+   "text": "Have you assigned responsibility for MOM notification timing and submission?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "3.3"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "6A"
+    }
+   ]
+  },
+  "3.3": {
+   "id": "3.3",
+   "category": "3",
+   "text": "Are you still in the planning phase and considering whether to alert authorities early?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes / Not sure",
+     "targetType": "node",
+     "target": "3.3.1"
+    },
+    {
+     "label": "No, imminent",
+     "targetType": "node",
+     "target": "3.4"
+    }
+   ]
+  },
+  "3.3.1": {
+   "id": "3.3.1",
+   "category": "3",
+   "text": "Would early engagement help prepare support without undermining confidentiality?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes / Not sure",
+     "targetType": "card",
+     "target": "6D"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "3.4"
+    }
+   ]
+  },
+  "3.4": {
+   "id": "3.4",
+   "category": "3",
+   "text": "Is the company unionised or are any affected employees covered by a collective agreement?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "3.4.1"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "3.5"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "7A"
+    }
+   ]
+  },
+  "3.4.1": {
+   "id": "3.4.1",
+   "category": "3",
+   "text": "Has the union consultation sequence been planned before employee notification?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "7B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "7A"
+    }
+   ]
+  },
+  "3.5": {
+   "id": "3.5",
+   "category": "3",
+   "text": "Do you have a clear communication sequence for leaders, managers, affected employees and stayers?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "13B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "13C"
+    }
+   ]
+  },
+  "4": {
+   "id": "4",
+   "category": "4",
+   "text": "I'm not sure what package or support to offer",
+   "autoAdvance": true,
+   "options": [
+    {
+     "label": "Select",
+     "targetType": "node",
+     "target": "4.1"
+    }
+   ]
+  },
+  "4.1": {
+   "id": "4.1",
+   "category": "4",
+   "text": "Which part are you most unsure about?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Severance",
+     "targetType": "node",
+     "target": "4.2"
+    },
+    {
+     "label": "Eligibility",
+     "targetType": "node",
+     "target": "4.3"
+    },
+    {
+     "label": "Beyond severance",
+     "targetType": "node",
+     "target": "4.4"
+    },
+    {
+     "label": "Support",
+     "targetType": "node",
+     "target": "4.5"
+    },
+    {
+     "label": "Foreign employees",
+     "targetType": "node",
+     "target": "4.6"
+    }
+   ]
+  },
+  "4.2": {
+   "id": "4.2",
+   "category": "4",
+   "text": "Has the severance approach been benchmarked against market norms and the company's financial position?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "4.2.1"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "8A"
+    }
+   ]
+  },
+  "4.2.1": {
+   "id": "4.2.1",
+   "category": "4",
+   "text": "Would affected employees likely perceive the package as fair?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "8B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "8A"
+    }
+   ]
+  },
+  "4.3": {
+   "id": "4.3",
+   "category": "4",
+   "text": "Are there employees with less than two years of service?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "4.3.1"
+    },
+    {
+     "label": "No",
+     "targetType": "card",
+     "target": "9B"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "9A"
+    }
+   ]
+  },
+  "4.3.1": {
+   "id": "4.3.1",
+   "category": "4",
+   "text": "Has the company decided whether to offer ex-gratia payments to short-service employees?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "9B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "9A"
+    }
+   ]
+  },
+  "4.4": {
+   "id": "4.4",
+   "category": "4",
+   "text": "Have all non-severance components been addressed?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "4.4.1"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "10A"
+    }
+   ]
+  },
+  "4.4.1": {
+   "id": "4.4.1",
+   "category": "4",
+   "text": "Can HR explain notice, leave, commissions, insurance, tax and references consistently?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "10B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "10A"
+    }
+   ]
+  },
+  "4.5": {
+   "id": "4.5",
+   "category": "4",
+   "text": "What level of support is currently planned?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "No support / basic sheet / not sure",
+     "targetType": "card",
+     "target": "11A"
+    },
+    {
+     "label": "Outplacement/EAP/coaching",
+     "targetType": "node",
+     "target": "4.5.1"
+    }
+   ]
+  },
+  "4.5.1": {
+   "id": "4.5.1",
+   "category": "4",
+   "text": "Is the support tailored by seniority, tenure, vulnerability and job-search difficulty?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "4.5.2"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "11A"
+    }
+   ]
+  },
+  "4.5.2": {
+   "id": "4.5.2",
+   "category": "4",
+   "text": "Are many affected employees senior PMETs or long-tenured staff?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "11C"
+    },
+    {
+     "label": "No",
+     "targetType": "card",
+     "target": "11B"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "11A"
+    }
+   ]
+  },
+  "4.6": {
+   "id": "4.6",
+   "category": "4",
+   "text": "Are any affected employees on EP, S Pass, Work Permit, PEP or related dependant arrangements?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "4.6.1"
+    },
+    {
+     "label": "No",
+     "targetType": "card",
+     "target": "12C"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "12A"
+    }
+   ]
+  },
+  "4.6.1": {
+   "id": "4.6.1",
+   "category": "4",
+   "text": "Could family, housing, schooling, pass cancellation or repatriation issues arise?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes / Not sure",
+     "targetType": "card",
+     "target": "12A"
+    },
+    {
+     "label": "No",
+     "targetType": "card",
+     "target": "12B"
+    }
+   ]
+  },
+  "5": {
+   "id": "5",
+   "category": "5",
+   "text": "I'm worried we'll mishandle the actual exit",
+   "autoAdvance": true,
+   "options": [
+    {
+     "label": "Select",
+     "targetType": "node",
+     "target": "5.1"
+    }
+   ]
+  },
+  "5.1": {
+   "id": "5.1",
+   "category": "5",
+   "text": "Which part worries you most?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Logistics",
+     "targetType": "node",
+     "target": "5.2"
+    },
+    {
+     "label": "Message delivery",
+     "targetType": "node",
+     "target": "5.3"
+    },
+    {
+     "label": "Emotional reactions",
+     "targetType": "node",
+     "target": "5.4"
+    },
+    {
+     "label": "Reputation",
+     "targetType": "node",
+     "target": "5.5"
+    },
+    {
+     "label": "Stayers/recovery",
+     "targetType": "node",
+     "target": "5.6"
+    }
+   ]
+  },
+  "5.2": {
+   "id": "5.2",
+   "category": "5",
+   "text": "Do you have a full Notification Day run-sheet?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "5.2.1"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "13A"
+    }
+   ]
+  },
+  "5.2.1": {
+   "id": "5.2.1",
+   "category": "5",
+   "text": "Does the run-sheet cover privacy, timing, documents, HR support, IT access, EAP and outplacement support?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "13B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "13A"
+    }
+   ]
+  },
+  "5.3": {
+   "id": "5.3",
+   "category": "5",
+   "text": "Who is currently expected to deliver the message?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Line manager or senior leader",
+     "targetType": "node",
+     "target": "5.3.1"
+    },
+    {
+     "label": "HR only",
+     "targetType": "node",
+     "target": "5.3.2"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "14A"
+    }
+   ]
+  },
+  "5.3.1": {
+   "id": "5.3.1",
+   "category": "5",
+   "text": "Have the message-deliverers been trained, scripted and role-played?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "14B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "14A"
+    }
+   ]
+  },
+  "5.3.2": {
+   "id": "5.3.2",
+   "category": "5",
+   "text": "Is there a specific reason the line manager should not deliver the message?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "14C"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "14A"
+    }
+   ]
+  },
+  "5.4": {
+   "id": "5.4",
+   "category": "5",
+   "text": "Are there employees who may react with shock, anger, grief, distress or known vulnerability?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "5.4.1"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "5.2"
+    },
+    {
+     "label": "Not sure",
+     "targetType": "card",
+     "target": "13D"
+    }
+   ]
+  },
+  "5.4.1": {
+   "id": "5.4.1",
+   "category": "5",
+   "text": "Are HR, EAP, outplacement and escalation support ready before the first meeting?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "13E"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "13D"
+    }
+   ]
+  },
+  "5.5": {
+   "id": "5.5",
+   "category": "5",
+   "text": "Are you concerned about LinkedIn, Glassdoor, media, clients or industry chatter?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes / Not sure",
+     "targetType": "node",
+     "target": "5.5.1"
+    },
+    {
+     "label": "No",
+     "targetType": "node",
+     "target": "5.6"
+    }
+   ]
+  },
+  "5.5.1": {
+   "id": "5.5.1",
+   "category": "5",
+   "text": "Do you have a prepared internal and external response plan?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "15B"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "15A"
+    }
+   ]
+  },
+  "5.6": {
+   "id": "5.6",
+   "category": "5",
+   "text": "Have you planned what happens to stayers in the first 48 hours after Notification Day?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "node",
+     "target": "5.6.1"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "15C"
+    }
+   ]
+  },
+  "5.6.1": {
+   "id": "5.6.1",
+   "category": "5",
+   "text": "Are managers ready to reassure teams, restore workflow and renew confidence?",
+   "autoAdvance": false,
+   "options": [
+    {
+     "label": "Yes",
+     "targetType": "card",
+     "target": "15D"
+    },
+    {
+     "label": "No / Not sure",
+     "targetType": "card",
+     "target": "15C"
+    }
+   ]
+  }
+ },
+ "cards": {
+  "1A": {
+   "id": "1A",
+   "coreTheme": "Need to retrench / alternatives",
+   "title": "You May Not Be Ready To Retrench Yet",
+   "situation": "You may be considering retrenchment before the company has clearly tested whether other options are available. The business pressure may be real, but the process may not yet show that retrenchment is the necessary next step.",
+   "importance": "In Singapore, responsible retrenchment is expected to come after serious consideration of alternatives. If the company appears to move straight to headcount reduction, employees may see the exercise as harsh, rushed or commercially convenient. This can create avoidable resentment, union sensitivity, reputational risk and loss of trust among the employees who remain.",
+   "oneThing": "Document the alternatives that were considered before any names are finalised.",
+   "strategicQuestion": "What evidence would show that retrenchment was genuinely necessary, and not simply the fastest way to reduce cost?"
+  },
+  "1B": {
+   "id": "1B",
+   "coreTheme": "Need to retrench / alternatives",
+   "title": "Technology Change Does Not Automatically Mean Retrenchment",
+   "situation": "The restructuring may be driven by technology, AI, automation or relocation. Some roles may be changing, but it is not yet clear whether the people in those roles must exit.",
+   "importance": "Technology-led restructuring can be sensitive. Employees may feel that their experience has been devalued, especially if no serious effort was made to consider redesign, reskilling or redeployment. If this is not handled carefully, the company may face morale issues, negative market commentary and questions about whether it took a responsible workforce transformation approach.",
+   "oneThing": "Separate roles that are truly redundant from roles that may be redesigned, reskilled or redeployed.",
+   "strategicQuestion": "Which roles are genuinely disappearing, and which employees may still be relevant to the future organisation?"
+  },
+  "1C": {
+   "id": "1C",
+   "coreTheme": "Need to retrench / alternatives",
+   "title": "Retrenchment May Be Necessary, But The Rationale Must Be Clear",
+   "situation": "The company may have a legitimate need to restructure, reduce roles or reshape the organisation. The issue now is whether the business rationale is clear enough to support the process.",
+   "importance": "A valid business reason does not automatically make the exercise safe. The company must still be able to explain why the roles are affected, how the new structure supports the business, and why retrenchment is the appropriate route. Weak rationale can make even a necessary retrenchment appear poorly thought through.",
+   "oneThing": "Prepare a concise business rationale that connects the retrenchment to the future organisation structure.",
+   "strategicQuestion": "Can leadership explain the change in a way that is commercially clear, legally careful and humanly respectful?"
+  },
+  "2A": {
+   "id": "2A",
+   "coreTheme": "Exit route",
+   "title": "You May Be Using The Wrong Exit Route",
+   "situation": "The issue may not be a pure redundancy. Some cases may involve performance, poor fit, role mismatch, career plateau or strained working relationships.",
+   "importance": "Using the wrong exit route can expose the organisation to claims of disguised retrenchment, unfair dismissal, inconsistent treatment or coercion. It also becomes difficult to explain why some employees receive retrenchment benefits while others are managed out through a different route. This is a high-risk area because the company's stated reason must match the facts.",
+   "oneThing": "Classify each case by the real reason for exit before deciding whether it is retrenchment, mutual separation, performance management or another route.",
+   "strategicQuestion": "Are you using the right exit mechanism, or forcing different employee situations into one process?"
+  },
+  "2B": {
+   "id": "2B",
+   "coreTheme": "Exit route",
+   "title": "Different Exit Issues May Be Getting Mixed Together",
+   "situation": "The company may be handling redundancy, performance concerns, mutual separations and future-fit issues around the same time.",
+   "importance": "When different exit types are grouped too closely, employees may compare outcomes and question the company's intent. This can lead to allegations that the company is avoiding retrenchment obligations, using performance as cover, or offering less generous terms to certain employees. The process may become harder to defend if the exit route is not properly segmented.",
+   "oneThing": "Create a clean decision map showing which employees fall under redundancy, performance, mutual separation or other transition categories.",
+   "strategicQuestion": "Which exit cases belong together, and which should be handled separately to avoid creating unnecessary risk?"
+  },
+  "3A": {
+   "id": "3A",
+   "coreTheme": "Planning timeline",
+   "title": "Your Timeline May Be Too Compressed",
+   "situation": "Notification Day may be approaching before the planning work is ready. The company may still be finalising criteria, packages, scripts, communications, manager roles or support arrangements.",
+   "importance": "Rushed retrenchments often create preventable errors. Managers may say the wrong thing. HR may not have answers. Package details may be inconsistent. Employees may receive the message in an uncontrolled way. Even where the business case is legitimate, poor preparation can make the exercise look careless.",
+   "oneThing": "Pause and map all critical workstreams before confirming the notification date.",
+   "strategicQuestion": "What must be completed before Notification Day so the exercise is controlled, defensible and humane?"
+  },
+  "3B": {
+   "id": "3B",
+   "coreTheme": "Planning timeline",
+   "title": "You Have A Planning Window. Use It Well",
+   "situation": "You appear to have some time before Notification Day. That is useful, but only if the time is used to prepare the exercise properly.",
+   "importance": "A longer timeline does not automatically reduce risk. In fact, the longer the planning period, the greater the need to manage confidentiality, decision rights, documentation and internal alignment. Poorly controlled planning can lead to leaks, rumours and anxiety before the company is ready to communicate.",
+   "oneThing": "Build a controlled project plan with clear owners, deadlines and a strict need-to-know list.",
+   "strategicQuestion": "How do you use the planning window well without allowing uncertainty, leaks or misalignment to grow?"
+  },
+  "4A": {
+   "id": "4A",
+   "coreTheme": "Selection defensibility",
+   "title": "Your Selection Criteria Need To Stand Up To Scrutiny",
+   "situation": "The affected list may have been shaped by manager judgment, cost pressure, business preference or incomplete documentation.",
+   "importance": "Selection is often where retrenchment risk becomes personal. Employees may accept that the company needs to restructure, but still challenge why they were selected. If the criteria are vague, inconsistent or subjective, the company may face complaints, union pressure, regulatory attention or reputational damage.",
+   "oneThing": "Write down the objective selection criteria before confirming the final list.",
+   "strategicQuestion": "If challenged, could the company explain every selection decision without relying on vague impressions?"
+  },
+  "4B": {
+   "id": "4B",
+   "coreTheme": "Selection defensibility",
+   "title": "Your Selection Process Still Needs A Defensible Record",
+   "situation": "The selection approach may be broadly sound, but the supporting documentation may not yet be complete enough.",
+   "importance": "A role-based selection process can still be questioned if the audit trail is weak. Decision records, scoring, business rationale and approvals matter. The company should not have to reconstruct its reasoning only after someone challenges the exercise.",
+   "oneThing": "Create a selection file that records the rationale, criteria, reviewers and approvals.",
+   "strategicQuestion": "What record would you rely on if an employee, union or regulator asked how the selection decision was made?"
+  },
+  "4C": {
+   "id": "4C",
+   "coreTheme": "Selection defensibility",
+   "title": "Performance Criteria Need Careful Handling",
+   "situation": "Performance history may be part of the selection discussion, but the records may be inconsistent, outdated, incomplete or not clearly linked to the future organisation.",
+   "importance": "Performance can be relevant, but it is risky when used casually in a retrenchment context. If the real issue is redundancy, over-emphasising performance may make the exercise look like a disguised termination. If performance records are weak, the company may create a dispute it did not need.",
+   "oneThing": "Check whether performance records are current, consistent and relevant before using them in selection.",
+   "strategicQuestion": "Is performance genuinely relevant to the restructuring decision, or is it being used to justify a decision already made?"
+  },
+  "5A": {
+   "id": "5A",
+   "coreTheme": "Workplace fairness risk",
+   "title": "Your Selection List May Carry Fairness Risk",
+   "situation": "The affected list may disproportionately include employees from protected or sensitive groups, such as older workers, pregnant employees, caregivers, employees of a particular nationality, or employees with disability or mental health conditions.",
+   "importance": "Singapore workplace fairness expectations raise the stakes for employers. Even with a genuine restructuring rationale, the pattern of impact matters. If the selection appears linked to protected characteristics, the company may face employee complaints, regulatory attention and reputational consequences.",
+   "oneThing": "Review the affected list for unintended concentration before Notification Day.",
+   "strategicQuestion": "Would an external reviewer see your selection as business-based, or as indirectly targeting a protected group?"
+  },
+  "5B": {
+   "id": "5B",
+   "coreTheme": "Workplace fairness risk",
+   "title": "Cost-Based Selection Can Become Fairness Risk",
+   "situation": "The company may be considering expensive, senior or long-serving employees for retrenchment because the cost savings appear greater.",
+   "importance": "Cost may be a business consideration, but it must be handled carefully. If higher-cost employees are mostly older or long-tenured, the company may face questions about whether cost is acting as a proxy for age, tenure or seniority. This can create fairness, morale and reputational issues.",
+   "oneThing": "Reframe the selection around role redundancy, future skills and business needs rather than individual cost alone.",
+   "strategicQuestion": "Are you selecting roles for the future organisation, or selecting people because they are expensive?"
+  },
+  "6A": {
+   "id": "6A",
+   "coreTheme": "MOM notification",
+   "title": "MOM Notification May Be Required",
+   "situation": "Your organisation may have at least 10 employees in Singapore and may be notifying one or more employees of retrenchment.",
+   "importance": "MOM notification duties can be triggered once affected employees are informed. Missing this step can turn an internal workforce exercise into a regulatory issue and may signal that the process was not properly controlled.",
+   "oneThing": "Assign clear ownership for MOM notification before the first employee is informed.",
+   "strategicQuestion": "Who is responsible for confirming the trigger point, submission timeline and information required?"
+  },
+  "6B": {
+   "id": "6B",
+   "coreTheme": "MOM notification",
+   "title": "MOM Notification May Not Be Mandatory, But Planning Still Matters",
+   "situation": "The company may have fewer than 10 employees in Singapore, so mandatory MOM retrenchment notification may not apply.",
+   "importance": "A smaller company is not free from reputational, legal or employee-relations risk. A small retrenchment can still damage trust if handled poorly. Employees may still ask why they were selected, what support is available, and whether the company acted fairly.",
+   "oneThing": "Even if MOM notification is not mandatory, prepare a written rationale, package explanation and communication plan.",
+   "strategicQuestion": "How will you show that the exercise was fair, respectful and properly considered, even if formal notification is not required?"
+  },
+  "6C": {
+   "id": "6C",
+   "coreTheme": "MOM notification",
+   "title": "Confirm Your MOM Notification Position Before You Notify Anyone",
+   "situation": "You may be unsure whether the company meets the employee threshold, whether the exit qualifies as retrenchment, or whether MOM notification applies.",
+   "importance": "Uncertainty around notification duties should be resolved before employee communication begins. Once employees are informed, timelines may start running. Trying to clarify obligations after the fact can create unnecessary pressure and avoidable compliance risk.",
+   "oneThing": "Confirm the Singapore headcount, the nature of the exit and the notification trigger before Notification Day.",
+   "strategicQuestion": "What facts must be confirmed before the company can safely proceed with employee notification?"
+  },
+  "6D": {
+   "id": "6D",
+   "coreTheme": "MOM notification",
+   "title": "Early Alert May Be Worth Considering",
+   "situation": "You may still be planning the exercise and are considering whether to alert MOM or relevant agencies early.",
+   "importance": "Early engagement may improve support readiness, but timing must be managed carefully because confidentiality, stakeholder sequencing and internal messaging still matter.",
+   "oneThing": "Assess whether early engagement would improve employee support without undermining confidentiality.",
+   "strategicQuestion": "Would early engagement reduce risk and improve support, or create timing and confidentiality complications?"
+  },
+  "7A": {
+   "id": "7A",
+   "coreTheme": "Union consultation",
+   "title": "Union Consultation Cannot Be An Afterthought",
+   "situation": "The company may be unionised, have employees covered by a collective agreement, or have a workforce where union involvement is possible.",
+   "importance": "If union engagement is mishandled, the issue can escalate beyond HR. The company may face union dissatisfaction, MOM attention, package renegotiation, public criticism and loss of trust. The risk is higher when employees are told before the union has been properly consulted.",
+   "oneThing": "Review the collective agreement and plan the union engagement sequence before employee notification.",
+   "strategicQuestion": "How do you engage the union early enough to be responsible, while managing confidentiality and timing properly?"
+  },
+  "7B": {
+   "id": "7B",
+   "coreTheme": "Union consultation",
+   "title": "Union Engagement Looks Planned. Keep The Sequence Tight",
+   "situation": "You appear to have considered union consultation and may already have a broad engagement plan.",
+   "importance": "Even when union handling is planned, execution still matters. A poorly timed meeting, incomplete information or inconsistent message can create friction. The union must understand the business rationale, proposed process and support package before the matter becomes emotional or public.",
+   "oneThing": "Prepare a union briefing pack that is clear, consistent and aligned with employee communications.",
+   "strategicQuestion": "What should the union hear before affected employees are notified, and what should remain confidential until the correct time?"
+  },
+  "8A": {
+   "id": "8A",
+   "coreTheme": "Package quantum",
+   "title": "The Package Will Shape The Story",
+   "situation": "You may be deciding how much severance to offer and trying to balance affordability with fairness.",
+   "importance": "The package is one of the first things employees will compare. A package seen as ungenerous can quickly become the story employees tell. It may also affect how unions, stayers, candidates and the market interpret the company's values.",
+   "oneThing": "Benchmark the proposed package against Singapore norms, industry practice and the company's financial position.",
+   "strategicQuestion": "What package is commercially sustainable while still signalling fairness, gratitude and responsible leadership?"
+  },
+  "8B": {
+   "id": "8B",
+   "coreTheme": "Package quantum",
+   "title": "A Fair Package Still Needs The Right Narrative",
+   "situation": "The proposed package may be broadly fair, but the company still needs to explain it properly.",
+   "importance": "Employees do not assess the package in isolation. They consider the company's financial health, leadership behaviour, timing, communication style and how colleagues are treated. A fair package can still create dissatisfaction if the rationale is poorly explained or delivered coldly.",
+   "oneThing": "Prepare a clear package explanation that connects the benefit to fairness, contribution and transition support.",
+   "strategicQuestion": "How will employees understand the package, and what might they still question after receiving it?"
+  },
+  "9A": {
+   "id": "9A",
+   "coreTheme": "Eligibility",
+   "title": "Eligibility Needs Clear Handling",
+   "situation": "Some employees may have shorter service, different contract terms or different eligibility positions. The company may not yet have decided how to handle these differences.",
+   "importance": "Eligibility is often where perceived unfairness arises. Employees compare packages and may not distinguish between entitlement, discretion and goodwill. If the company cannot explain why different employees receive different benefits, resentment can grow quickly.",
+   "oneThing": "Prepare a clear position on eligibility and ex-gratia treatment before Notification Day.",
+   "strategicQuestion": "How will you explain differences in benefits without creating comparison risk or avoidable escalation?"
+  },
+  "9B": {
+   "id": "9B",
+   "coreTheme": "Eligibility",
+   "title": "Eligibility Looks Simpler, But Consistency Still Matters",
+   "situation": "The affected employees may broadly meet the company's eligibility criteria, or the company may already have a position on ex-gratia treatment.",
+   "importance": "Even when eligibility is relatively straightforward, consistency remains important. Employees may still compare notice periods, leave treatment, medical coverage, outplacement access, references and timing. The company's credibility depends on how consistently the full package is applied.",
+   "oneThing": "Check that the same eligibility principles are applied across all affected employees, unless there is a documented reason for differences.",
+   "strategicQuestion": "Where are the likely comparison points, and how will HR explain them consistently?"
+  },
+  "10A": {
+   "id": "10A",
+   "coreTheme": "Beyond severance",
+   "title": "The Package Is More Than Severance",
+   "situation": "The severance amount may be calculated, but other package elements may not be fully addressed.",
+   "importance": "Employees will ask about notice pay, unused leave, commissions, bonus treatment, insurance, tax, references, handover, devices and access. A company that cannot answer these questions may look unprepared even if the headline payout is fair.",
+   "oneThing": "Create a package component checklist and make sure HR can explain every item.",
+   "strategicQuestion": "What practical and financial questions will employees ask in the first 24 hours, and are you ready to answer them?"
+  },
+  "10B": {
+   "id": "10B",
+   "coreTheme": "Beyond severance",
+   "title": "Your Package Details Need A Consistent Explanation",
+   "situation": "The main package components may have been addressed, but HR still needs to communicate them consistently.",
+   "importance": "Even correct package calculations can create conflict if different employees receive different explanations. Inconsistent answers about notice, leave, commissions or tax treatment can lead employees to suspect unfairness or error.",
+   "oneThing": "Prepare a standard package FAQ for HR, managers and affected employees.",
+   "strategicQuestion": "How will you ensure every affected employee receives the same explanation, while still addressing their individual circumstances?"
+  },
+  "11A": {
+   "id": "11A",
+   "coreTheme": "Employee support",
+   "title": "Support Cannot Be Cosmetic",
+   "situation": "The company may be offering little more than a payout, a resource sheet or general advice.",
+   "importance": "Retrenchment affects confidence, identity, family finances and employability. A payout helps, but it does not automatically help employees reposition themselves, prepare a resume, manage interviews or access hidden job opportunities.",
+   "oneThing": "Decide what support will be available immediately on Notification Day and what continues afterwards.",
+   "strategicQuestion": "What would affected employees need in order to move forward with confidence, not just leave with a payout?"
+  },
+  "11B": {
+   "id": "11B",
+   "coreTheme": "Employee support",
+   "title": "Support Should Match The Employee Profile",
+   "situation": "The company may be planning outplacement, EAP, coaching or government support referrals, but the support may not yet be segmented by employee needs.",
+   "importance": "Different employees require different levels of support. A junior employee, senior PMET, foreign employee, long-tenured employee or emotionally vulnerable employee may need very different help. A one-size-fits-all approach can appear efficient, but may not be effective.",
+   "oneThing": "Segment affected employees by seniority, tenure, job-search difficulty and personal complexity before finalising support.",
+   "strategicQuestion": "Who needs light-touch support, and who needs deeper one-to-one career transition guidance?"
+  },
+  "11C": {
+   "id": "11C",
+   "coreTheme": "Employee support",
+   "title": "Senior Employees Need More Than A Workshop",
+   "situation": "Some affected employees may be senior PMETs or long-tenured leaders who have not searched for a job in many years.",
+   "importance": "Senior employees often face a more complex transition. Their challenge may not be basic job search. It may involve positioning, market mapping, resume rebuilding, LinkedIn strategy, interview recalibration, network activation and emotional adjustment. A generic workshop may not be enough.",
+   "oneThing": "Identify which employees need personalised transition coaching rather than broad group support.",
+   "strategicQuestion": "Who will struggle most to reposition themselves in the market, and what level of support would be responsible for them?"
+  },
+  "12A": {
+   "id": "12A",
+   "coreTheme": "Foreign employees",
+   "title": "Foreign Employees Need Special Planning",
+   "situation": "Some affected employees may be on EP, S Pass, Work Permit, PEP or related dependant arrangements. They may also have family, schooling, housing, lease or repatriation issues.",
+   "importance": "For foreign employees, retrenchment can affect their right to stay in Singapore and the stability of their family arrangements. These details need to be planned, not discovered during the meeting.",
+   "oneThing": "Identify affected employees with work pass, dependant, housing, schooling or repatriation issues before Notification Day.",
+   "strategicQuestion": "What additional support is needed for employees whose ability to remain in Singapore may be affected?"
+  },
+  "12B": {
+   "id": "12B",
+   "coreTheme": "Foreign employees",
+   "title": "Work Pass Issues Still Need To Be Managed Carefully",
+   "situation": "There may not appear to be major family or relocation complications, but affected foreign employees still have work pass timelines and administrative issues to manage.",
+   "importance": "Even straightforward work pass cases require careful handling. Pass cancellation, tax clearance, final pay, repatriation support and communication timing can all affect the employee's transition. A process that feels administratively careless may be viewed as insensitive.",
+   "oneThing": "Create a work pass checklist covering cancellation timing, tax clearance, final payment and practical support.",
+   "strategicQuestion": "What must be settled so the employee can exit the company and manage their Singapore status without unnecessary distress?"
+  },
+  "12C": {
+   "id": "12C",
+   "coreTheme": "Foreign employees",
+   "title": "Foreign Employee Issues May Not Be The Main Risk",
+   "situation": "You selected foreign employee issues, but the exercise may not involve employees on work passes or dependant arrangements.",
+   "importance": "If there are no affected foreign employees, this may not be the most important risk area. However, the wider package, support and communication issues still need to be properly handled.",
+   "oneThing": "Return to the package and support review and confirm which employee group is most affected.",
+   "strategicQuestion": "If work pass issues do not apply, what package, support or communication concern now carries the greatest risk?",
+   "followUpNode": "4.1"
+  },
+  "13A": {
+   "id": "13A",
+   "coreTheme": "Notification Day",
+   "title": "Notification Day Is Where Trust Is Won Or Lost",
+   "situation": "The company may have the rationale, list and package ready, but the actual notification process may not be fully planned.",
+   "importance": "Employees remember how they were told. They remember whether the room was private, whether the manager was prepared, whether HR had answers, and whether the company treated them with dignity. A poorly run Notification Day can undo months of planning and become the story employees tell afterwards.",
+   "oneThing": "Create a Notification Day run-sheet covering timing, rooms, scripts, HR roles, documents, support and escalation.",
+   "strategicQuestion": "What must happen, step by step, so the employee is treated with dignity and the company remains in control?"
+  },
+  "13B": {
+   "id": "13B",
+   "coreTheme": "Notification Day",
+   "title": "Your Notification Day Plan Still Needs Rehearsal",
+   "situation": "You may already have a run-sheet covering the main logistics, documents and support arrangements.",
+   "importance": "A plan that has not been rehearsed may still fail under pressure. Timing can slip. Managers can lose confidence. Employees may ask questions the team did not anticipate. IT, HR, security, EAP and outplacement support must work together smoothly.",
+   "oneThing": "Conduct a dry run with the core team before Notification Day.",
+   "strategicQuestion": "Where could the plan break under emotional pressure, timing pressure or unexpected employee reactions?"
+  },
+  "13C": {
+   "id": "13C",
+   "coreTheme": "Notification Day",
+   "title": "Your Communication Sequence Needs Control",
+   "situation": "Leaders, managers, affected employees and stayers may all need to hear different messages at different times.",
+   "importance": "If the sequence is wrong, the company may lose control of the narrative before Notification Day is complete. Employees may hear news from colleagues, managers may give inconsistent answers, or stayers may panic because no one has explained what happens next.",
+   "oneThing": "Prepare a communication sequence showing who hears what, when, from whom and with what approved message.",
+   "strategicQuestion": "Who needs to know first, and what exactly are they authorised to say?"
+  },
+  "13D": {
+   "id": "13D",
+   "coreTheme": "Notification Day",
+   "title": "Emotional Reactions Must Be Planned For",
+   "situation": "Some employees may react with shock, anger, grief, distress or confusion. Others may have known personal vulnerabilities or family pressures.",
+   "importance": "Retrenchment is not just a business message. It is a deeply personal event for the employee. If emotional reactions are mishandled, the employee may be harmed, managers may feel exposed, and the company may appear cold or unprepared.",
+   "oneThing": "Prepare HR, EAP, outplacement and escalation support before the first notification meeting.",
+   "strategicQuestion": "Who steps in if an employee cannot process the news calmly or safely?"
+  },
+  "13E": {
+   "id": "13E",
+   "coreTheme": "Notification Day",
+   "title": "You Have Planned For Human Reactions. Now Rehearse The Response",
+   "situation": "You may already have support resources lined up for emotional reactions and difficult conversations.",
+   "importance": "Having support resources is only part of the work. Managers and HR still need to know when to pause, when to listen, when to stop explaining, when to escalate, and when to hand over to a support professional.",
+   "oneThing": "Run through likely emotional scenarios with managers, HR and support providers before Notification Day.",
+   "strategicQuestion": "Does everyone know their role when the conversation does not go as planned?"
+  },
+  "14A": {
+   "id": "14A",
+   "coreTheme": "Message delivery",
+   "title": "Your Managers May Not Be Ready",
+   "situation": "Managers may be expected to deliver the retrenchment message without proper preparation, scripting or role-play.",
+   "importance": "An untrained manager may ramble, apologise excessively, promise unauthorised alternatives, make risky comments, over-explain selection, or mishandle anger and grief. In that moment, the manager becomes the face of the company. A weak delivery can turn a difficult but manageable decision into a damaging experience.",
+   "oneThing": "Train managers on the script, their role, what not to say, emotional responses and escalation points.",
+   "strategicQuestion": "Are your managers prepared to deliver the message without increasing the company's risk?"
+  },
+  "14B": {
+   "id": "14B",
+   "coreTheme": "Message delivery",
+   "title": "Prepared Managers Reduce The Risk Of A Bad Exit",
+   "situation": "The managers delivering the message may already have been briefed, trained and role-played.",
+   "importance": "Preparation reduces risk, but the actual meeting still requires discipline. Managers must stay focused, avoid improvisation, avoid unauthorised promises and leave HR to handle package and process questions. A trained manager can protect both the employee's dignity and the company's position.",
+   "oneThing": "Give managers a final briefing pack with the script, key messages, forbidden phrases and escalation protocol.",
+   "strategicQuestion": "What is the one thing each manager must not say, even under emotional pressure?"
+  },
+  "14C": {
+   "id": "14C",
+   "coreTheme": "Message delivery",
+   "title": "An HR-Led Notification Needs A Clear Rationale",
+   "situation": "The company may be considering having HR deliver the retrenchment message instead of the line manager.",
+   "importance": "There may be cases where HR should lead, but this should be a considered decision. If managers avoid the conversation without good reason, employees may feel abandoned by their leaders. It can also send the wrong signal to stayers about accountability.",
+   "oneThing": "Decide whether HR-led notification is justified for each case, and document the reason.",
+   "strategicQuestion": "Is HR leading because it is appropriate, or because the business leader is avoiding a difficult responsibility?"
+  },
+  "15A": {
+   "id": "15A",
+   "coreTheme": "Stayers and recovery",
+   "title": "The Retrenchment Is Not Over When The Last Employee Leaves The Room",
+   "situation": "The company may be focused on notifying affected employees, but may not yet have a proper plan for stayers, clients, managers or market reaction.",
+   "importance": "The people who remain will decide whether the business recovers. If they lose trust, the company may face productivity decline, talent flight, client disruption, negative online commentary and hiring difficulty. A retrenchment that saves cost but damages confidence can become more expensive than expected.",
+   "oneThing": "Plan the first 48 hours after Notification Day before the exercise begins.",
+   "strategicQuestion": "How will you reassure the team, restore workflow and rebuild confidence after the exits?"
+  },
+  "15B": {
+   "id": "15B",
+   "coreTheme": "Stayers and recovery",
+   "title": "The Digital Story Starts Immediately",
+   "situation": "You may be concerned about LinkedIn posts, Glassdoor reviews, media attention, client questions or market chatter.",
+   "importance": "The official company message may not be the message the market remembers. Employees, stayers, candidates, clients and competitors can all shape the story. If affected employees feel the process was cold or unfair, the digital narrative can form quickly.",
+   "oneThing": "Prepare internal and external response lines before Notification Day.",
+   "strategicQuestion": "What would affected employees say about how the company treated them, and would that story damage your employer brand?"
+  },
+  "15C": {
+   "id": "15C",
+   "coreTheme": "Stayers and recovery",
+   "title": "The Stayers May Be Your Next Risk",
+   "situation": "Remaining employees may be anxious, guilty, angry, overloaded or unsure whether more cuts are coming.",
+   "importance": "Stayers watch how leavers are treated. If they lose trust, the company may face disengagement, productivity decline and unwanted resignations from employees it intended to retain. This risk can surface after the retrenchment, when leadership assumes the worst is over.",
+   "oneThing": "Prepare manager talking points and team conversations for the first 48 hours after Notification Day.",
+   "strategicQuestion": "How will managers reassure teams without making promises the company cannot keep?"
+  },
+  "15D": {
+   "id": "15D",
+   "coreTheme": "Stayers and recovery",
+   "title": "Recovery Needs A Plan, Not Just A Town Hall",
+   "situation": "The company may intend to hold a town hall or send a leadership message after the retrenchment, but the operational recovery plan may still be incomplete.",
+   "importance": "A town hall may explain what happened, but it does not automatically restore workflow. Teams still need clarity on workload, client ownership, handovers, priorities, reporting lines and future expectations. Without this, the retrenchment can create operational drag long after Notification Day.",
+   "oneThing": "Build a recovery plan around three priorities: reassure the team, restore workflow and renew direction.",
+   "strategicQuestion": "What must managers do in the first week to stabilise the business and rebuild confidence?"
+  }
+ },
+ "officialReferences": [
+  {
+   "label": "MOM Responsible Retrenchment",
+   "url": "https://www.mom.gov.sg/employment-practices/retrenchment/responsible-retrenchment"
+  },
+  {
+   "label": "MOM Mandatory Retrenchment Notifications",
+   "url": "https://www.mom.gov.sg/employment-practices/retrenchment/mandatory-retrenchment-notifications"
+  },
+  {
+   "label": "TAFEP Responsible Retrenchment Practices",
+   "url": "https://www.tal.sg/tafep/employment-practices/retrenchment/responsible-retrenchment-practices"
+  },
+  {
+   "label": "WSG SkillsFuture Jobseeker Support",
+   "url": "https://www.wsg.gov.sg/home/individuals/jobseeker-support"
+  },
+  {
+   "label": "IRAS Retrenchment Benefits",
+   "url": "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/what-is-taxable-what-is-not/employment-income/retrenchment-benefits"
+  }
+ ]
+}
